@@ -1,6 +1,5 @@
-package dev.esdras.diveintodesignpatterns.model;
+package dev.esdras.diveintodesignpatterns.model.company;
 
-import java.util.Arrays;
 import java.util.List;
 
 public abstract class Company {

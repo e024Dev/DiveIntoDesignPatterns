@@ -1,4 +1,4 @@
-package dev.esdras.diveintodesignpatterns.model;
+package dev.esdras.diveintodesignpatterns.model.company;
 
 public class Designer implements Employee{
 
