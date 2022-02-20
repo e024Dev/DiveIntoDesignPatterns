@@ -1,14 +1,16 @@
 package dev.esdras.diveintodesignpatterns.model;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Company {
 
     public void createSoftware() {
-        Designer designer = new Designer();
-        Programmer programmer = new Programmer();
-        Tester tester = new Tester();
+        List<Employee> employees = Arrays.asList(
+                new Designer(),
+                new Programmer(),
+                new Tester());
 
-        designer.designArchitecture();
-        programmer.writeCode();
-        tester.testSoftware();
+        employees.forEach(Employee::doWork);
     }
 }

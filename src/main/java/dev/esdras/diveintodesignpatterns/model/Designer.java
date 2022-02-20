@@ -1,8 +1,9 @@
 package dev.esdras.diveintodesignpatterns.model;
 
-public class Designer {
+public class Designer implements Employee{
 
-    public void designArchitecture() {
+    @Override
+    public void doWork() {
         System.out.println("Desiger working...");
     }
 }
