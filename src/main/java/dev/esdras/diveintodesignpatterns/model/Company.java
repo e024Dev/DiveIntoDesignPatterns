@@ -3,14 +3,14 @@ package dev.esdras.diveintodesignpatterns.model;
 import java.util.Arrays;
 import java.util.List;
 
-public class Company {
+public abstract class Company {
+
+    private final List<Employee> employees = getEmployees();
+    public abstract List<Employee> getEmployees();
 
     public void createSoftware() {
-        List<Employee> employees = Arrays.asList(
-                new Designer(),
-                new Programmer(),
-                new Tester());
-
+        System.out.printf("%s criando software...%n", this.getClass().getSimpleName());
         employees.forEach(Employee::doWork);
+        System.out.println("\n");
     }
 }
